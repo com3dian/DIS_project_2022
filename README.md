@@ -7,7 +7,7 @@ Decomposition using Spark
 
 ## II. Homogeneity Function
 
-The homogeneity  of a dataset D is a metric $Hom(D)$ that indicates how homogeneous (similar) the elements of the dataset are. With decomposition(clustering), the homogeinty function decute to $\sum_i(Hom(D_i))$, where $D_i$s are the clusters.
+The homogeneity  of a dataset D is a metric $Hom(D)$ that indicates how homogeneous (similar) the elements of the dataset are. With decomposition(clustering), the homogeinty function decute to $\sum_i(Hom(D_i))$, where $D_i$ s are the clusters.
 
 We used a generalized cosine similarity as the homogeneity function in this project, as we are using cosine similarity as the distance metrics. The [Cosine Similarity](https://en.wikipedia.org/wiki/Cosine_similarity) $Cos()$ measures the distance between two vectors(or sequence of values), 2 orthogonal vectors have a cosine similarity of 1, 2 parallel vectors have similarity of 1, and 2 opposite vectors have -1. The cosine similarity is always used only in the positive space, therefore, it is ranged from 0 to 1.
 
