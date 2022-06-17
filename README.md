@@ -22,7 +22,7 @@ $$
 X = USV^T
 $$
 
-Where the matrix $S$ is diagonal and the singular values $\sigma_i$s are non-negative(it's zero if and only if there is multicollinearity in the dataset) and arranged in decreasing order. Once we get the SVD decomposition, the similarity can be calculated as,
+Where the matrix $S$ is diagonal and the singular values $\sigma_i$ s are non-negative(it's zero if and only if there is multicollinearity in the dataset) and arranged in decreasing order. Once we get the SVD decomposition, the similarity can be calculated as,
 
 
 $$
