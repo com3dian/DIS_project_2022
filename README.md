@@ -16,7 +16,7 @@ $$
 Cos(x, y) = \frac{x}{|x|} \cdot \frac{y}{|y|}
 $$
 
-For the Generalized Cosine Similarity, we firstly concatenate the vector into a matrix $X$, with each column is a normalized vector $x_i$ . After that, we compute the singular value decomposition(SVD)  of $X$, 
+For the Generalized Cosine Similarity, we firstly concatenate the vector into a matrix $X$, with each column is a normalized vector $x_i$ . After that, we compute the singular value decomposition([SVD](https://en.wikipedia.org/wiki/Singular_value_decomposition))  of $X$, 
 
 $$
 X = USV^T
@@ -26,7 +26,7 @@ Where the matrix $S$ is diagonal and the singular values $\sigma_i$s are non-neg
 
 
 $$
-SVDsim(Y) = \frac{\sum_{k}^K \sigma_k^2}{||Y||^{2}_F}
+SVDsim(Y) = \frac{\sum_k^K \sigma_k^2}{||Y||^{2}_F}
 $$
 
 where $||Y||^2_F$ is the [Frobenius norm](https://en.wikipedia.org/wiki/Matrix_norm#Frobenius_norm) of $Y$.
@@ -37,7 +37,7 @@ Note that the above similarity score is the $\frac{\sqrt{1 + Cos(x, y)}}{2}$ whe
 
 
 $$
-SVDsim = 2 \times (\frac{\sum_{k}^K \sigma_k^2}{||Y||^{2}_F})^2 - 1
+SVDsim = 2 \times (\frac{\sum_k^K \sigma_k^2}{||Y||^{2}_F})^2 - 1
 $$
 
 
