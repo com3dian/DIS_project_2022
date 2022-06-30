@@ -42,3 +42,9 @@ $$
 
 
 
+## III. Our Approach
+
+See in the `getDecompositionbyColumn` function.
+
+The decomposition function take 2 parameters, df(dataframe) and the number of clusters K. The algoithm is designed to decompose the dataframe into multiple subgroups. In each step, the algorithm will select the query(column) that 1.maximizing the cross homogeneity score, 2.there are still fewer conjucted queries(clusters) than K, 3. the updated homogeneity score is larger than the old one, 4.the query is not used before this step. If there do not exist such a query(column), the function returns dataframe with queries.
+
